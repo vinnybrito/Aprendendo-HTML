@@ -9,7 +9,12 @@
         #box-1 {
             width: 150px;
             height: 150px;
-            background-color: blue;
+            background-color: darkorange;
+        }
+        #box-2 {
+            width: 150px;
+            height: 150px;
+            background-color: deepskyblue;
         }
     </style>
 </head>
@@ -19,6 +24,19 @@
     <!--Por mais que o HTML permita que você utilizar mais de um elemento com o mesmo ID, a proposta original, é que ele seja utilizado para realizar uma identificação única-->
 
     <div id="box-1"></div>
+    <div id="box-2"></div>
     
+    <script>
+
+        /*const, ou uma constante é uma váriavél que nunca muda*/
+        const box1 = document.getElementById('box-1');
+
+        console.log(box1);
+
+        const box2 = document.querySelector('#box2');
+
+        console.log(box2)
+
+    </script>
 </body>
 </html>
